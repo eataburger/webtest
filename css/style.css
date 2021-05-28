@@ -1,0 +1,113 @@
+@charset "UTF-8";
+#mainwrapper {
+	
+	position: absolute;
+	width: 680px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+	
+}
+
+#mainwrapper #bilde {
+	position: absolute;
+	width: 25px;
+	height: 40px;
+	left: 100px;
+	top: 100px;
+}
+
+#mainwrapper #logoteksts {
+	position: absolute;
+	width: 78px;
+	height: 16px;
+	left: 140px;
+	top: 120px;
+
+}	
+	
+#mainwrapper nav {
+
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	/* identical to box height, or 162% */
+
+	color: #6A707B;
+}
+
+#mainwrapper #about {
+	position: absolute;
+	width: 42px;
+	height: 26px;
+	left: 331px;
+	top: 114px;
+}
+
+#mainwrapper #how {
+	position: absolute;
+	width: 91px;
+	height: 26px;
+	left: 403px;
+	top: 114px;
+}
+
+#mainwrapper #contact {
+	position: absolute;
+	width: 56px;
+	height: 26px;
+	left: 524px;
+	top: 114px;
+}
+
+#otherwrapper {
+	position: absolute;
+	width: 1620px;
+	height: 1080px;
+	left: 680px;
+	top: 0px;
+}
+
+#pineapple {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#newsletter {
+	position: absolute;
+	width: 399px;
+	height: 44px;
+	left: 140px;
+	top: 374px;
+
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 44px;
+/* identical to box height, or 137% */
+
+
+	color: #131821;
+}
+
+#discount {
+	position: absolute;
+	width: 400px;
+	height: 56px;
+	left: 140px;
+	top: 433px;
+
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	/* or 175% */
+
+
+	color: #6A707B;
+}
