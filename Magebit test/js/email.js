@@ -1,1 +1,0 @@
-Vue.use(vuelidate.default)
