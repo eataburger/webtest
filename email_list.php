@@ -2,29 +2,28 @@
 <html>
 <head>
 <title>Email list</title>
-<style>
-table {
-border-collapse: collapse;
-width: 100%;
-color: #4066A5;
-font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-font-size: 20px;
-text-align: left;
-}
-th {
-background-color: #4066A5;
-color: white;
-}
-tr:nth-child(even) {background-color: #f2f2f2}
-</style>
+	
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+ 
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+
 </head>
 <body>
-<table>
+	
+<table id="table_id" class="display">
+<thead>
 <tr>
 <th>ID</th>
 <th>Email</th>
 <th>Date</th>
 </tr>
+</thead>
+<tbody>
 <?php
 $con = mysqli_connect("localhost", "root", "", "email");
 // Check connection
@@ -43,6 +42,12 @@ echo "</table>";
 } else { echo "The database is empty"; }
 $con->close();
 ?>
+</tbody>
 </table>
+<script type="text/javascript">
+$(document).ready( function () {
+$('#table_id').DataTable();
+} );
+</script>
 </body>
 </html>
