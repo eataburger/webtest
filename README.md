@@ -20,11 +20,12 @@ To open the email list table, go to `localhost/webtest-main/email_list.php`
 
 ## Code for creating the email list database and table
 
-CREATE DATABASE `email`
-USE `email`
-CREATE TABLE `list` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `email` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `date` datetime NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4
+CREATE DATABASE IF NOT EXISTS `email` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `email`;
+DROP TABLE IF EXISTS `list`;
+CREATE TABLE IF NOT EXISTS `list` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`email` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+`date` datetime NOT NULL DEFAULT current_timestamp(),
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1
