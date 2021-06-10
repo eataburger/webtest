@@ -12,7 +12,7 @@ For running the project locally I recommend using a XAMPP server.
 The control panel can be downloaded here: https://www.apachefriends.org/index.html
 After downloading and installing XAMPP I recommend creating the email database first.
 After launching Apache and MySQL modules in the control panel, opening `localhost/phpmyadmin/` on any browser should be possible.
-Visiting the SQL tab and copying the code below will create the database and list.
+Visiting the SQL tab and copying the code below in raw will create the database and list.
 Afterward, the website files should downloaded and extracted to the installation location of XAMPP in the htdocs folder.
 Running the website from the browser at `localhost/webtest-main/main.html` is now possible.
 To open the email list table, go to `localhost/webtest-main/email_list.php`
